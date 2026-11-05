@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "punchboost",
+  "version": "${version}",
+  "name": "Punch Boost",
+  "description": "Configurable one-key assist for Punch-bow movement boosting. Client-side, with a server-side opt-out channel (punchboost:disable).",
+  "authors": ["YourName"],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/punchboost",
+    "sources": "https://github.com/YourName/punchboost",
+    "issues": "https://github.com/YourName/punchboost/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/punchboost/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.punchboost.PunchBoostClient"],
+    "modmenu": ["dev.punchboost.compat.ModMenuIntegration"]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
